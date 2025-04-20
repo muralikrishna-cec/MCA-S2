@@ -17,7 +17,7 @@ class search
 
         for(int i=0;i<arr.length;i++){
             if(arr[i]==key){
-                System.out.println("Key founded at index : "+i+" (0 - based indexing)");
+                System.out.println("Key found at index : "+ i +" (0 - based indexing)");
                 return true;
             }
         }
@@ -36,7 +36,7 @@ class search
         int key=sc.nextInt();
 
         if(!find(arr,key)){
-            System.out.println("Key not founded");
+            System.out.println("Key not found");
         }
     }
 }
