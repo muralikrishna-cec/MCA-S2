@@ -4,7 +4,8 @@ class Mul extends Thread
 {
   int n;
   
-  Mul(int n) {
+  Mul(int n) 
+  {
    this.n =n;
   }
   
@@ -20,7 +21,8 @@ class Mul extends Thread
 class Prime extends Thread
 {
  int n;
-  Prime(int n) {
+  Prime(int n)
+  {
    this.n = n;
   }
   
