@@ -1,4 +1,4 @@
-**Linux Commands - One Line Description, Usage, Flags, and Example (For Viva Revision)**
+**Linux Commands -  Description, Usage, Flags, and Example**
 
 1. **man** – Displays the manual of a command.
 
