@@ -1,0 +1,1 @@
+echo "Number is Amstrong"

@@ -162,6 +162,4 @@
 
 ---
 
-**File Extension for Revision File:** `.txt` or `.md` (for markdown with formatting)
 
-You can name it: `linux_commands_viva.txt` or `linux_commands_viva.md`

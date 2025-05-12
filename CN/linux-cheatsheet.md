@@ -182,11 +182,11 @@
 | `.bashrc` | Bash shell config file |
 
 
-39. > vs >> - Output Redirection
->: Overwrites file content
+39.* > vs >> - Output Redirection
+*>: Overwrites file content
 Example: echo "hi" > file.txt
 
->>: Appends to file
+*>>: Appends to file
 Example: echo "hi" >> file.txt
 
 40. cat vs less
