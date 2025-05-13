@@ -21,7 +21,6 @@ else
   echo "GRADE : F"   
 fi   
 
-#TL;DR:
 #✔️ Use semicolon ; if then is on the same line.
 
 #❌ Don’t use semicolon if then is on the next line.
