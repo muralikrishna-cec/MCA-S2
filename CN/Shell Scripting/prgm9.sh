@@ -3,7 +3,7 @@
 read -p "enter a starting and ending range " start end
 count=0
 
-for(( num=start; num<=end; num++)); do 
+for(( num=$start; num<=$end; num++)); do 
    if [ $num -lt 2 ]; then 
       continue;
    fi

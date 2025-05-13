@@ -17,4 +17,8 @@ else
   echo "Number is Not Amstrong"
 fi
 
-    
+  # Calculate digit^n manually since Bash doesn't support ** for power in arithmetic
+  #  for (( i=0; i<n; i++ ))
+  #  do
+  #      digit_pow=$(( digit_pow * digit ))
+  #  done    

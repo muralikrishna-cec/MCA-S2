@@ -15,3 +15,7 @@ echo "MUL : $mul"
 div=$((num1/num2))
 echo "DIV : $div"
 
+# expr is a Unix command-line utility used to evaluate expressions, especially in older shell scripting environments.
+# expr is mainly used for backward compatibility with older systems or POSIX shells.
+
+#Use $(( )) or (( )) in modern Bash scripting.
