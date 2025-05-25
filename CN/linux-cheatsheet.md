@@ -183,6 +183,7 @@
 
 
 39.* > vs >> - Output Redirection
+
 *>: Overwrites file content
 Example: echo "hi" > file.txt
 
@@ -190,21 +191,25 @@ Example: echo "hi" > file.txt
 Example: echo "hi" >> file.txt
 
 40. cat vs less
+
 cat file.txt: Displays full file (good for small files)
 
 less file.txt: Paged view with scroll (better for large files)
 
 41. ps vs top
+
 ps aux: Snapshot of current processes
 
 top: Live updating view of running processes
 
 42. grep vs find
+
 grep "text" *.txt: Search content inside files
 
 find . -name "*.txt": Locate files by name
 
 43. scp vs rsync
+
 scp: Securely copy file (no resume support)
 
 rsync: Efficient syncing (supports resume, diff)
