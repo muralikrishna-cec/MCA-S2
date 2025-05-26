@@ -47,3 +47,5 @@ create Procedure GetCountByLastName(IN l_name VARCHAR(255),OUT count int)
 call GetCountByLastName('Bombay',@count) //
 
 mysql> select @count //
+
+show Procedure status where db='Procedures' //
