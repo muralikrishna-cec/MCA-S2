@@ -29,7 +29,6 @@ drop procedure CountValue //
 
 --- **************************** EXAMPLE 3 ****************************************
 
-
 create Procedure SelectByLastName(IN l_name VARCHAR(200))
     -> begin
     -> select * From User where last_name=l_name;
@@ -40,10 +39,7 @@ create Procedure SelectByLastName(IN l_name VARCHAR(200))
 
 --- **************************** EXAMPLE 4 ****************************************
     
-
-call GetCountByLastname('Bombay',@count) //
-ERROR 1305 (42000): PROCEDURE Procedures.GetCountByLastname does not exist
-mysql> create Procedure GetCountByLastName(IN l_name VARCHAR(255),OUT count int)
+create Procedure GetCountByLastName(IN l_name VARCHAR(255),OUT count int)
     -> begin
     -> select COUNT(*) into count from User Where last_name=l_name;
     -> end //
