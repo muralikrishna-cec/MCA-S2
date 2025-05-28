@@ -51,6 +51,9 @@ db.users.drop()
 // 🔹 Drop current database
 db.dropDatabase()
 
+// 🔹 Drop current collection
+db.products.drop()
+
 // ===== Insert Operations =====
 
 // 🔹 Insert one document
@@ -333,3 +336,14 @@ db.users.updateOne(
     { $pull: { skills: "Java" } }
   )
   
+
+  What is db?  -> It is a built-in variable in MongoDB shell. Always points to the current database selected using use.
+
+  // 🔹 Find only one document (first match)
+db.users.findOne({ isActive: true })
+
+// 🔹 Drop the entire collection
+db.users.drop()
+
+// 🔹 Drop the current database
+db.dropDatabase()
