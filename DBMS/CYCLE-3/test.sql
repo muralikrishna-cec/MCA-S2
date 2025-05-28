@@ -1,11 +1,10 @@
-
-create Procedure GetDetailsByName(IN val VARCHAR(200))
+Create Procedure Membership(IN crdt INT,OUT membership VARCHAR(200))
 begin
-  declare flag int ;
-  select COUNT(*) into flag from Customer Where name = val;
-  IF flag = 0 THEN
-    SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = "NO USER FOUND......";
+  IF crdt > 5000 THEN
+    SET membership ='Platinum';
+  ELSEIF crdt >=1000 THEN
+    SET membership ='Gold';
   ELSE
-    select * from Customer Where name =val;
+    SET membership ='Silver';
   END IF;
-  end //    
+end //         
