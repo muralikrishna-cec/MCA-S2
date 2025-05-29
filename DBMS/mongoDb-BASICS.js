@@ -34,10 +34,10 @@
 // ===== Basic Commands =====
 
 // 🔹 Show all databases
-show dbs
+//show dbs
 
 // 🔹 Create or switch to a database
-use myDatabase
+//use myDatabase
 
 // 🔹 Show current database
 db
@@ -337,7 +337,10 @@ db.users.updateOne(
   )
   
 
-  What is db?  -> It is a built-in variable in MongoDB shell. Always points to the current database selected using use.
+ //What is db?  -> It is a built-in variable in MongoDB shell. Always points to the current database selected using use.
+ //ISODate is a function in MongoDB used to create a date object in the ISO 8601 format. This format is a standard for representing dates and times. MongoDB uses this to store dates in a proper date format, not just as strings.
+
+
 
   // 🔹 Find only one document (first match)
 db.users.findOne({ isActive: true })

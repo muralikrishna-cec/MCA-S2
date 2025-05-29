@@ -1,5 +1,5 @@
 // Use the Inventory database
-use Inventory
+//use Inventory
 
 // Create the Products collection
 db.createCollection("Products")
@@ -48,8 +48,8 @@ db.Products.insertMany([
   ])
 
   // Show all collections in the current database
-  show tables
-  show collections
+  //show tables
+  //show collections
 
   // Find all products
   db.Products.find()
