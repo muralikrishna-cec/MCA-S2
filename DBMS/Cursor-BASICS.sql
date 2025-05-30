@@ -1,0 +1,15 @@
+create procedure cursor12()
+    -> begin
+    -> declare finished int default 0;
+    -> declare val varchar(20);
+    -> declare pos varchar(20);
+    -> declare cur cursor for select name,position from employee;
+    -> declare continue handler for not found set finished =1;
+    -> open cur;
+    -> loop1:loop fetch cur into val,pos;
+    -> if finished then leave loop1;
+    -> end if;
+    -> select val,pos;
+    -> end loop;
+    -> close cur;
+    -> end //
