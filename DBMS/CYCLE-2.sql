@@ -87,7 +87,22 @@ select e.first_name,COALESCE(m.first_name,'NO MANAGER') from employees e LEFT JO
 
 select first_name,last_name,department_id from employees where department_id =(select department_id from employees where last_name="Taylor");
 
+select j.job_title,CONCAT(e.first_name," ",e.last_name) as name,(j.max_salary-e.salary)as salary_diff from employees e JOIN jobs j On e.job_id=j.job_id;
 
+select d.department_name,avg(e.salary)as average ,count(e.employee_id) from employees e LEFT JOIN departments d ON d.department_id=e.department_id Group by d.department_id;
+
+CREATE VIEW EmployeeInDelhi as select e.employee_id,CONCAT(e.first_name," ",e.last_name) as Employee_name,e.phone_number,j.job_title,d.department_name,CONCAT(m.first_name,"",m.last_name)as manager from employees e JOIN departments
+d ON e.department_id=d.department_id JOIN jobs j ON j.job_id=e.job_id LEFT JOIN employees m ON e.manager_id=m.employee_id JOIN locations l On d.location_id=l.location_id where l.city='Delhi';
+
+select Employee_name from EmployeeInDelhi where job_title='Manager' and department_name='finance';
+
+---------update not possible on view
+
+select e.employee_id,e.first_name,e.last_name from employees e LEFT JOIN dependents d ON e.employee_id=d.employee_id where d.employee_id IS NULL;
+
+select *from employees where manager_id=1 UNION select * from employees where manager_id=3;
+
+select*from employees where employee_id in(select distinct(employee_id) from dependents);
 
 
 
