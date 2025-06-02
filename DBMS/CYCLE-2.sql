@@ -71,7 +71,7 @@ select e.first_name,e.last_name,d.department_name,j.job_title from employees e J
 
 select d.department_name,l.street_address,l.postal_code,c.country_name,r.region_name From departments d JOIN locations l ON d.location_id=l.location_id JOIN countries c ON l.country_id=c.country_id JOIN regions r ON r.region_id=c.region_id;
 
-The COALESCE() function returns the first non-null value in the list of arguments. 
+---The COALESCE() function returns the first non-null value in the list of arguments. 
 
 select e.first_name,e.last_name,d.department_id,COALESCE(department_name,'no dept') as dept_name from employees e LEFT JOIN departments d ON d.department_id=e.department_id;  
 select e.first_name,e.last_name,d.department_id,d.department_name from employees e LEFT JOIN departments d ON d.department_id=e.department_id;
@@ -86,6 +86,8 @@ select e.first_name,e.last_name,d.department_id,d.department_name from departmen
 select e.first_name,COALESCE(m.first_name,'NO MANAGER') from employees e LEFT JOIN employees m ON e.manager_id=m.employee_id;
 
 select first_name,last_name,department_id from employees where department_id =(select department_id from employees where last_name="Taylor");
+
+
 
 
 

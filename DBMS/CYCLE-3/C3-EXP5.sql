@@ -29,3 +29,34 @@ create procedure CalculateSalary()
     -> close cur;
     -> select "Salary updated" as message;
     -> end //
+
+------------------ USING SWITCH CASE -------------------------------
+
+    CREATE PROCEDURE SetSalary()
+        begin
+        declare finished int default 0;
+        declare id int;
+        declare days int;
+        declare sal decimal(10,2);
+        declare desig varchar(20);
+        declare cur CURSOR for select emp_id,no_wrk,desigination from Employees;
+        declare continue handler for not found set finished=1;
+        open cur;
+        loop1:loop fetch cur into id,days,desig;
+        if finished then leave loop1;
+        end if;
+        CASE desig
+        WHEN "Assistance Professor" THEN set sal=days*1750;
+        WHEN "Clerk" THEN set sal=days*750;
+        WHEN "Programmer" THEN set sal=days*1250;
+        ELSE set sal=0.00;
+        END CASE;
+        update Employees set salary =sal where emp_id=id;
+        end loop;
+        select "salary updated..." as message;
+        close cur;
+        end //
+
+
+
+
