@@ -11,6 +11,7 @@ CREATE TRIGGER Bfore_insert
 
 INSERT INTO EMPLOYEE1 (first_name, last_name, job_id) VALUES ('   alice   ', '  smith ', 'qa_analyst');
 
+
 OLD. – Refers to the values before the change
 Only used in DELETE and UPDATE triggers.
 Represents the row that is being deleted or updated.
