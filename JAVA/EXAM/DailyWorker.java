@@ -49,8 +49,8 @@ class DailyWorker
     {
         Scanner sc = new Scanner(System.in);
 
-        Worker obj1=new dailyWrkr("Murali",450.0,48);
-        Worker obj2=new SalariedWrkr("sam",750.0);
+        Worker obj1=new dailyWrkr("Murali",450.0,48);  //name , salaryrate, hour (daily worker)
+        Worker obj2=new SalariedWrkr("sam",750.0);  //name , salaryrate (salaried worker)
 
         obj1.comPay();
         obj2.comPay();
