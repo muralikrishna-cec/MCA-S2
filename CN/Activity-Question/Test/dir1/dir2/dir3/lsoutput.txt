@@ -1,0 +1,4 @@
+total 8
+-rw-rw-r-- 1 krishna krishna  0 Jun  7 15:23 lsoutput.txt
+-rw-rw-r-- 1 krishna krishna 32 Jun  7 15:19 test1.txt
+-rw-rw-r-- 1 krishna krishna 32 Jun  7 15:20 test2.txt
