@@ -135,3 +135,106 @@
 
 - **Packet Analysis**: Wireshark, tcpdump for analyzing network traffic.
 
+
+##  Notes: TCP, UDP, and Network Layers
+
+### OSI Model (7 Layers)
+
+1. **Physical** – Transmits raw bit stream over physical medium (cables, signals)
+2. **Data Link** – Handles MAC addressing and error detection (Ethernet, switches)
+3. **Network** – Responsible for IP addressing and routing (IP, ICMP)
+4. **Transport** – Ensures end-to-end communication (**TCP**, **UDP**)
+5. **Session** – Manages sessions between applications
+6. **Presentation** – Translates, encrypts, compresses data
+7. **Application** – Interfaces for end-user processes (HTTP, FTP, DNS)
+
+### TCP/IP Model (4 Layers)
+
+| TCP/IP Layer   | Corresponding OSI Layers | Protocol Examples    |
+| -------------- | ------------------------ | -------------------- |
+| Application    | OSI Layers 5–7           | HTTP, FTP, DNS, SMTP |
+| Transport      | OSI Layer 4              | **TCP**, **UDP**     |
+| Internet       | OSI Layer 3              | IP, ICMP             |
+| Network Access | OSI Layers 1–2           | Ethernet, ARP        |
+
+### TCP (Transmission Control Protocol)
+
+* Connection-oriented
+* Reliable and ordered delivery
+* Uses acknowledgment and retransmission
+* Slower due to overhead but secure
+* Example protocols: HTTP, HTTPS, FTP, SMTP
+
+**Key Features:**
+
+* 3-way handshake (SYN, SYN-ACK, ACK)
+* Flow control, congestion control
+* Guaranteed delivery
+
+### UDP (User Datagram Protocol)
+
+* Connectionless
+* Unreliable, no guaranteed delivery/order
+* Minimal overhead, fast
+* Example protocols: DNS, VoIP, streaming, games
+
+**Key Features:**
+
+* No handshakes
+* No retransmission
+* Used where speed is more critical than reliability
+
+### TCP vs UDP
+
+| Feature     | TCP                             | UDP                   |
+| ----------- | ------------------------------- | --------------------- |
+| Connection  | Yes (handshake)                 | No                    |
+| Speed       | Slower                          | Faster                |
+| Reliability | High (error checking, ordering) | Low (no guarantees)   |
+| Use Cases   | Web, file transfer              | Streaming, games, DNS |
+
+---
+
+### Packet Structure
+
+* **Header** – Contains metadata like source/destination IP, protocol, sequence number
+* **Payload** – Actual data being transmitted
+
+### Packet Analysis Tools
+
+* **tcpdump** – Command-line packet analyzer for capturing and inspecting network traffic
+* **Wireshark** – GUI-based tool for deep packet inspection, filtering, and analysis
+
+**Difference:**
+
+* `tcpdump` is lightweight and scriptable, good for quick tasks
+* `Wireshark` provides detailed GUI-based analysis with visualization
+
+### nc (netcat)
+
+* Tool for reading/writing data over network connections using TCP/UDP
+* Common use: port scanning, file transfers, testing open ports
+
+### make / cmake
+
+* **make** – Automates build process using `Makefile`
+* **cmake** – Cross-platform tool that generates Makefiles or build files for IDEs
+
+### LAMP / Laravel
+
+* **LAMP** – Linux, Apache, MySQL, PHP stack for web development
+* **Laravel** – Popular PHP web framework based on MVC pattern
+
+### Virtualization
+
+* **Virtual Machine (VM)** – Emulates a full computer system (e.g. VirtualBox, KVM)
+* **Xen** – Hypervisor used to run multiple OSs on a single physical machine
+* **KVM** – Kernel-based Virtual Machine for Linux-based virtualization
+
+### Ansible and VMs
+
+* **Ansible** – Automation tool for configuration management and application deployment
+* **Linux VM using Ansible Playbook** – Automate VM provisioning, package installs, firewall setup, etc.
+
+---
+
