@@ -25,6 +25,14 @@
   - **HDD**: Magnetic storage, slower, cheaper.
   - **SSD**: Flash storage, faster, no moving parts.
   - **PATA/SATA/SCSI**: Interfaces for connecting storage drives.
+  * **PATA** – **Parallel Advanced Technology Attachment**
+  * **SATA** – **Serial Advanced Technology Attachment**
+
+  These are interfaces used to connect storage devices like hard drives and optical drives to the computer's motherboard.
+
+* PATA uses **parallel communication**, older and bulkier.
+* SATA uses **serial communication**, faster and more efficient.
+
   - **IDE**: Integrated Drive Electronics – controls drive and data transfer.
 
 ---
