@@ -14,7 +14,6 @@ This repository contains lab programs for **MCA Semester 2** organized into thre
 - Linux commands and file system navigation
 - Shell scripting (conditions, loops, functions)
 - User and permission management
-- Network tools: `tcpdump`, `wireshark`, `netcat`, etc.
 - Process and system resource management
 
 ### 🛢️ DBMS (Advanced Database Management Systems)
