@@ -19,7 +19,7 @@ ls -t                                 # Sorts files by modification time, newest
 ls -s                                 # Lists files with their size in blocks
 ls -r                                 # Reverses the order of the sort
 ls -sr                                # Sorts by file size and reverses order
-ls -lsr                               # Lists files with details, sorts by size in reverse
+ls -lSr                               # Lists files with details, sorts by size in reverse
 ls -lh                                # Lists files with human-readable file sizes
 
 ls > lsoutput                         # Redirects output of 'ls' to a file
