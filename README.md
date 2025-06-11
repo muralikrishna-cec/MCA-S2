@@ -1,6 +1,6 @@
 # MCA Semester 2 Lab Programs
 
-This repository contains lab programs for **MCA Semester 2** organized into three main folders, each representing a specific subject.
+This repository contains lab programs for **MCA Semester 2** organized into three main folders, each representing a specific subject .
 
 ## 📁 Folder Structure
 
