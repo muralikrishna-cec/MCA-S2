@@ -7,6 +7,7 @@ This repository contains lab programs for **MCA Semester 2** organized into thre
 - `CN` – Network and System Administration Lab (Linux & Shell Scripting)
 - `DBMS` – Advanced Database Management Systems Lab (MySQL, Triggers, Cursors, Stored Procedures, MongoDB)
 - `JAVA` – Java Programming Lab (OOP Concepts, Exception Handling, File I/O, etc.)
+- `DOCKER` – Docker Basics
 
 ## 📘 Subjects & Topics Covered
 
@@ -30,6 +31,9 @@ This repository contains lab programs for **MCA Semester 2** organized into thre
 - Multithreading basics
 - Array of objects, method overloading/overriding
 
+### DOCKER
+- Basics
+
 ## 📌 Technologies Used
 
 - `MySQL`
@@ -37,4 +41,5 @@ This repository contains lab programs for **MCA Semester 2** organized into thre
 - `Linux`
 - `MongoDB`
 - `Shell Scripting`
+- `DOCKER`
 
